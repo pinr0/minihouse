@@ -1,0 +1,40 @@
+﻿/* La même page CSS est commune à toutes les pages du site */
+
+body
+{
+	background-color : cornflowerblue;
+	font-family: verdana;
+}
+
+#debut {
+        text-align: center;
+}
+
+.blocType1 {
+    background-color: #A9E2F3;
+	text-align: center;
+} 
+
+
+a:link { 
+	color: black;
+} 
+
+a:visited {
+	color: forestgreen;
+}
+
+a:hover {
+	color: #FE2E2E;
+}
+
+/* pour centrer une image */
+IMG.centre { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 30px;
+	box-shadow: 8px 8px 12px #191970;}
+
+
+

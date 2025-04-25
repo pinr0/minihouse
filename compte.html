@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Animal Hope</title>
+	<!-- ci-après on appelle un fichier CSS (nommé design2.css) qui définira les caractéristiques esthétiques de certaines balises... -->
+	<link rel="stylesheet" media="screen" type="text/css" title="design" href="CSS/design2.css" />
+  </head>
+  
+	<body>
+		<div class="navbar"> <!-- Ce bloc est commun à toutes les pages car il gère le menu -->
+			<div class="logo">
+			<td> <img src="images/logo.png" height="130" alt="logo " /> </td>
+			</div>	
+
+			<div class="menu">
+				<ul>
+					<li ><a href="index.html">ACCUEIL</a></li> <!-- ici c'est la page d'accueil qui est active -->
+					<li><a href="Aidez nous.html">AIDEZ NOUS</a></li> <!-- si c'était cette page qui était active, la ligne serait  <li class="active"><a href="#">CONCERTS</a></li>-->
+					<li><a href="Contacts.html">CONTACTS</a></li>
+					<li class="active"><a href="compte.html">MON COMPTE</a></li>
+				</ul>
+			</div>
+            <br><br><br>
+            <div class = "inscription"></div>
+
+            <br></br>
+                <div class="form-row">
+                    <label for="prénom">Prénom :</label>
+                    <input type="text" id="prénom" name="prénom" class="champ-large">
+                </div>
+
+                <div class="form-row">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="nom" name="nom" class="champ-large" >
+                </div>
+            <br></br>    
+                <div class="form-row">
+                    <label for="choix">Vous êtes ? :</label>
+                    <select id="choix" name="choix" class="champ-large">
+                        <option value="option1">homme</option>
+                        <option value="option2">femme</option>
+                        <option value="option3">non binaire</option>
+                        <option value="option4">croissant</option>
+                    </select>
+                </div>
+            <br></br>
+                 <div class="form-row">
+                    <label for="mail">mail :</label>
+                    <input type="text" id="mail" name="mail" class="champ-large">
+                </div>
+                <div class="form-row">
+                    <label for="mail">mot de passe :</label>
+                    <input type="password" id="mot de passe" name="mot de passe" class="champ-large">
+                </div>
+
+            </div>
+        </div>
