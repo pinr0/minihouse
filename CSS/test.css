@@ -1,0 +1,81 @@
+/* Style de base du body et du menu */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style du bouton hamburger */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 10; /* S'assurer que le hamburger soit toujours au-dessus du menu */
+}
+
+.hamburger div {
+    width: 30px; /* Largeur des barres */
+    height: 4px; /* Hauteur des barres */
+    background-color: #333;
+    margin: 6px 0; /* Espacement entre les barres */
+}
+
+/* Style du menu */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.menu li {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    border-top: 1px solid #444;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Afficher le menu quand il est ouvert */
+.menu.open {
+    display: flex;
+}
+
+/* Style du lien au survol */
+.menu li:hover {
+    background-color: #444;
+}
+
+/* Styles pour les écrans plus larges */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; /* Masquer le bouton hamburger sur les écrans larges */
+    }
+
+    .menu {
+        display: flex; /* Afficher le menu horizontalement */
+        position: static;
+        flex-direction: row;
+    }
+
+    .menu li {
+        border-top: none;
+        padding: 10px 20px;
+    }
+}
