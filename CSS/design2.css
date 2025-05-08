@@ -196,6 +196,20 @@ IMG.centre {
 
 }
 
+.main-title {
+	font-family: 'Cinzel', serif;
+	font-size: 3rem;
+	letter-spacing: 0.15em;
+	text-align: center;
+	color: #111; /* Ou #333 pour plus doux */
+  }
+  
+  .chess-icon {
+	font-size: 1em;
+	color: #bfa46f; /* Doré subtil */
+	margin: 0 0.1em;
+  }
+
 
 	
 	
